@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://weizheng-notes.vercel.app/sitemap.xml

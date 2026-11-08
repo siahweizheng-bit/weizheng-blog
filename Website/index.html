@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f3ec" />
+    <meta name="google-site-verification" content="ifYJIAmvXUi5yttOkELaTki7T-rk7IJ4TNRA7_ekEu8" />
+    <meta name="description" content="伟政的线上笔记：一位马来西亚 HELP University 心理学 Year 1 Semester 1 学生的学习与生活记录。" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://weizheng-notes.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://weizheng-notes.vercel.app/" />
+    <meta property="og:title" content="伟政的线上笔记" />
+    <meta property="og:description" content="一位马来西亚 HELP University 心理学学生的学习与生活记录。" />
+    <meta property="og:image" content="https://weizheng-notes.vercel.app/avatar.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"WebSite","name":"伟政的线上笔记","url":"https://weizheng-notes.vercel.app/","inLanguage":"zh-Hans","description":"一位马来西亚 HELP University 心理学学生的学习与生活记录。","author":{"@type":"Person","name":"伟政"}}
+    </script>
+    <title>伟政的线上笔记</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="site-config.js" defer></script>
+    <script src="content-utils.js" defer></script>
+    <script src="site-i18n.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="伟政的线上笔记，回到首页">
+        <span class="brand-mark" aria-hidden="true">伟</span>
+        <span class="brand-copy"><strong>伟政的线上笔记</strong><small>PERSONAL NOTES</small></span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#home" data-nav="home">首页</a>
+        <a href="#articles" data-nav="articles">文章</a>
+        <a href="notion-templates.html">Notion 模板</a>
+        <a href="#about" data-nav="about">关于</a>
+      </nav>
+      <a class="header-note" href="#articles"><span>慢慢写，慢慢长大</span><span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main">
+      <section id="home-view" class="home-view">
+        <section id="home" class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span>你好，我是伟政 · 一名正在学习与记录的大学生</p>
+            <h1 id="hero-title">把日常里的<br /><em>小发现，</em><br class="narrow-break" />认真写下来。</h1>
+            <div class="profile-facts" aria-label="关于伟政">
+              <div class="profile-focus"><span class="focus-symbol" aria-hidden="true">✳</span><div><span class="focus-label">HELP University</span><strong>心理学本科生 <small>PSYCHOLOGY</small></strong></div></div>
+              <div class="profile-meta"><span>来自马来西亚</span><span>Year 1 · Semester 1</span></div>
+            </div>
+            <p class="hero-intro">我在 HELP University 读心理学，也在摸索怎样用 AI 工具和学习方法，把大学生活过得更有条理。这里记录我亲自读过、试过、想过的事；有新想法时，也会回来修正。</p>
+            <div class="hero-actions">
+              <a class="button button-dark" href="#articles">看看公开的笔记 <span aria-hidden="true">↓</span></a>
+              <a class="text-link" href="#about">认识一下我 <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-footnote"><span class="tiny-rule"></span><span>写给正在路上的我们</span></div>
+          </div>
+          <div class="hero-art profile-art">
+            <img class="profile-photo" src="avatar.webp" alt="伟政在图书馆里" width="1200" height="1600" fetchpriority="high" />
+            <span class="art-stamp">认识<br />伟政</span>
+            <span class="art-caption">A SMALL CORNER OF MY MIND</span>
+          </div>
+          <span class="hero-index" aria-hidden="true">01 / 个人笔记</span>
+        </section>
+
+        <section id="articles" class="articles-section" aria-labelledby="articles-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-dot"></span>从这里开始阅读</p>
+              <h2 id="articles-title">公开的 <em>笔记</em></h2>
+            </div>
+            <p class="section-aside">从课堂、工具和日常出发，<br />写下具体的尝试与想法。</p>
+          </div>
+
+          <div class="article-tools">
+            <div id="category-list" class="category-list" aria-label="按分类筛选" role="group"></div>
+            <label class="search-box">
+              <span class="sr-only">搜索文章</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.7"></circle><path d="m16 16 4.4 4.4"></path></svg>
+              <input id="search-input" type="search" placeholder="搜一搜文章…" autocomplete="off" />
+              <kbd>/</kbd>
+            </label>
+          </div>
+          <p id="results-label" class="results-label" aria-live="polite"></p>
+          <div id="articles-state" class="state-panel" role="status" aria-live="polite">
+            <span class="loading-spinner" aria-hidden="true"></span>
+            <span>正在翻开新的一页…</span>
+          </div>
+          <div id="article-grid" class="article-grid" aria-live="polite"></div>
+        </section>
+
+        <section id="about" class="intro-strip" aria-labelledby="about-title">
+          <div class="section-kicker"><span>02</span><span>关于这个角落</span></div>
+          <div class="intro-main">
+            <h2 id="about-title">在课本之外，<br /><em>也练习理解生活。</em></h2>
+            <div class="intro-text">
+              <p>我是来自马来西亚的 HELP University 心理学本科生，目前读 Year 1 · Semester 1。这个网站是我的公开笔记本。</p>
+              <p>我会写课堂上正在理解的心理学概念、自己实际用过的 AI 与学习方法，以及校园生活里的观察。每篇文章会尽量交代我做了什么、发现了什么，还有哪些问题仍没想清楚。</p>
+            </div>
+          </div>
+          <div class="topic-list" aria-label="文章主题">
+            <span>心理学</span><span>AI 与效率</span><span>校园生活</span><span>个人成长</span>
+          </div>
+        </section>
+
+        <section id="subscribe" class="subscribe-section" aria-labelledby="subscribe-title">
+          <div class="subscribe-copy">
+            <div class="section-kicker"><span>03</span><span>邮件订阅</span></div>
+            <h2 id="subscribe-title">有新笔记时，<br /><em>寄一封邮件给你。</em></h2>
+            <p>填写邮箱并选择语言。新文章发布时，我会把文章正文寄给你；随时可在邮件中取消订阅。</p>
+          </div>
+          <div class="subscribe-panel">
+            <form id="subscribe-form" novalidate hidden>
+              <label for="subscribe-email">电子邮箱</label>
+              <div class="subscribe-controls"><input id="subscribe-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required placeholder="name@example.com" /><button type="submit">订阅笔记 <span aria-hidden="true">↗</span></button></div>
+              <fieldset class="subscribe-language"><legend>你想收到哪种语言的邮件？</legend><label><input type="radio" name="language" value="zh" required />中文</label><label><input type="radio" name="language" value="en" required />English</label></fieldset>
+              <input class="subscribe-honey" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <p class="subscribe-note">仅用于发送新文章。不会公开你的邮箱。</p>
+              <p id="subscribe-status" class="subscribe-status" role="status" aria-live="polite"></p>
+            </form>
+            <p id="subscribe-unavailable" class="subscribe-unavailable">邮件订阅即将开放。</p>
+          </div>
+        </section>
+
+        <section class="social-section" aria-labelledby="social-title" hidden>
+          <div class="social-heading"><div class="section-kicker"><span>04</span><span>找到我</span></div><h2 id="social-title">也可以在这些地方<br /><em>继续认识我。</em></h2></div>
+          <div class="social-grid" aria-label="联系伟政">
+            <a class="social-card" data-contact-email hidden><span class="social-icon social-icon-email" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><span class="social-copy"><strong>Gmail</strong><small data-email-address></small></span></a>
+            <a class="social-card" data-social="instagram" hidden><span class="social-icon social-icon-instagram" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="social-copy"><strong>Instagram</strong><small>前往主页 ↗</small></span></a>
+            <a class="social-card" data-social="xiaohongshu" hidden><span class="social-icon social-icon-xiaohongshu" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" fill="currentColor"/><path d="M8 8.2h8M8 11.8h8M8 15.4h5.5" stroke="#fffaf3" stroke-width="1.8" stroke-linecap="round"/></svg></span><span class="social-copy"><strong>小红书</strong><small>前往主页 ↗</small></span></a>
+            <a class="social-card" data-social="facebook" hidden><span class="social-icon social-icon-facebook" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.2 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H8V13h2.8v8h3.4Z"/></svg></span><span class="social-copy"><strong>Facebook</strong><small>前往主页 ↗</small></span></a>
+            <a class="social-card" data-social="substack" hidden><span class="social-icon social-icon-substack" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 3.5h16v2H4zm0 3.5h16v2H4zm0 3.5h16V21l-8-4.5L4 21z"/></svg></span><span class="social-copy"><strong>Substack</strong><small>前往主页 ↗</small></span></a>
+            <a class="social-card" data-social="threads" hidden><span class="social-icon social-icon-threads" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 8.3c-.8-2.1-2.7-3.2-5.5-3.2-4.1 0-6.6 2.7-6.6 7s2.4 7 6.5 7c3.4 0 5.8-1.8 5.8-4.5 0-2.5-2-4-5-4-2.3 0-3.9 1-3.9 2.7 0 1.3 1.1 2.1 2.6 2.1 2.3 0 3.6-1.8 3.6-4.6 0-3-1.3-4.7-3.8-4.7-1.1 0-2 .3-2.7.9"/></svg></span><span class="social-copy"><strong>Threads</strong><small>前往主页 ↗</small></span></a>
+          </div>
+        </section>
+
+
+      </section>
+
+      <section id="article-view" class="article-view" hidden aria-labelledby="article-title">
+        <div class="article-topline"><a id="back-to-articles" class="back-link" href="#articles"><span aria-hidden="true">←</span> 回到文章列表</a><span class="article-top-label">伟政的线上笔记 · 阅读</span></div>
+        <div id="article-content"></div>
+      </section>
+      <dialog id="subscribe-dialog" class="subscribe-dialog" aria-labelledby="subscribe-dialog-title">
+        <button id="subscribe-dialog-close" class="subscribe-dialog-close" type="button" aria-label="关闭订阅窗口">×</button>
+        <h2 id="subscribe-dialog-title">订阅伟政的线上笔记</h2>
+        <p>填写邮箱并选择语言。有新文章时，会把文章正文寄给你。</p>
+        <form id="article-subscribe-form" novalidate hidden>
+          <label for="article-subscribe-email">电子邮箱</label>
+          <div class="subscribe-controls"><input id="article-subscribe-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required placeholder="name@example.com" /><button type="submit">订阅笔记 <span aria-hidden="true">↗</span></button></div>
+          <fieldset class="subscribe-language"><legend>你想收到哪种语言的邮件？</legend><label><input type="radio" name="language" value="zh" required />中文</label><label><input type="radio" name="language" value="en" required />English</label></fieldset>
+          <input class="subscribe-honey" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <p class="subscribe-note">仅用于发送新文章。不会公开你的邮箱；随时可在邮件中取消订阅。</p>
+          <p id="article-subscribe-status" class="subscribe-status" role="status" aria-live="polite"></p>
+        </form>
+        <p id="article-subscribe-unavailable" class="subscribe-unavailable">邮件订阅即将开放。</p>
+      </dialog>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">伟</span><span>伟政的线上笔记<em>愿每一次记录，都让日子清晰一点。</em></span></a>
+      <div class="footer-meta"><span>由好奇心写成</span><span>© <span id="current-year"></span> 伟政</span><a href="#home">回到顶部 ↑</a></div>
+    </footer>
+  </body>
+</html>
